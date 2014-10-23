@@ -1,5 +1,5 @@
 /*
- *  com/jtheory/jdring/PastDateException.java
+ *  com/jtheory/jdring/AlarmEntry.java
  *  Copyright (C) 1999 - 2004 jtheory creations, Olivier Dedieu et al.
  *
  *  This library is free software; you can redistribute it and/or modify
@@ -15,11 +15,14 @@
  *  You should have received a copy of the GNU Library General Public License
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
  */
-
 package com.jtheory.jdring;
 
-public class PastDateException extends Exception {
-    // Nothing
+/**
+ * @author jmelian
+ *
+ */
+public interface RingExecutor {
+
+    void execute(Runnable r) throws NullPointerException;
 }
